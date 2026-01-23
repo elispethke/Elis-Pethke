@@ -1,103 +1,143 @@
-import type { Config } from "tailwindcss";
+Project Title
 
-export default {
-  darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
-  prefix: "",
-  theme: {
-    container: {
-      center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
-    },
-    extend: {
-      fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        mono: ['JetBrains Mono', 'monospace'],
-      },
-      colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        glow: {
-          primary: "hsl(var(--glow-primary))",
-          accent: "hsl(var(--glow-accent))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-        "2xl": "1rem",
-        "3xl": "1.5rem",
-      },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-        "fade-in": {
-          from: { opacity: "0", transform: "translateY(20px)" },
-          to: { opacity: "1", transform: "translateY(0)" },
-        },
-        "slide-up": {
-          from: { opacity: "0", transform: "translateY(40px)" },
-          to: { opacity: "1", transform: "translateY(0)" },
-        },
-        shimmer: {
-          "0%": { backgroundPosition: "-200% 0" },
-          "100%": { backgroundPosition: "200% 0" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        "fade-in": "fade-in 0.6s ease-out forwards",
-        "slide-up": "slide-up 0.8s ease-out forwards",
-        shimmer: "shimmer 2s linear infinite",
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "glow-gradient": "linear-gradient(135deg, hsl(var(--primary)), hsl(var(--accent)))",
-      },
-    },
-  },
-  plugins: [require("tailwindcss-animate")],
-} satisfies Config;
+Elis Pethke — Frontend & Mobile Engineer Portfolio
+
+This repository contains the source code of my personal portfolio website, designed and developed to showcase my experience as a Frontend & Mobile Engineer with a strong focus on performance, user experience, modern UI, and clean architecture.
+
+The project demonstrates real-world frontend practices, including component-based design, smooth animations, responsive layouts, and third-party integrations.
+
+Why This Project Matters
+
+This portfolio was built to reflect how I approach real products:
+
+Clear UI structure and reusable components
+
+Strong attention to UX and interaction details
+
+Modern frontend stack used in production environments
+
+Clean, readable, and maintainable code
+
+It is not a template — all sections and components were designed and implemented intentionally.
+
+Key Features
+
+Futuristic hero section with smooth animations using Framer Motion
+
+Responsive navigation with smooth internal scrolling (no page reloads)
+
+About section highlighting professional background
+
+Web and Mobile project cards showcasing different types of applications
+
+Public contact form integrated with Formspree (no backend required)
+
+Success feedback message without layout shift
+
+Footer with external social links opening in a new tab
+
+Fully responsive design for desktop and mobile
+
+Tech Stack
+
+This project was built using a modern frontend stack:
+
+Vite – fast development and build tooling
+
+React – component-based UI development
+
+TypeScript – type safety and scalability
+
+Tailwind CSS – utility-first styling
+
+shadcn/ui – accessible and reusable UI components
+
+Framer Motion – animations and micro-interactions
+
+Formspree – public contact form integration
+
+Getting Started (Local Development) Prerequisites
+
+Node.js (recommended via nvm)
+
+npm
+
+Installation
+
+Clone the repository
+
+git clone https://github.com/elispethke/Elis-Pethke.git
+
+Navigate to the project directory
+
+cd Elis-Pethke
+
+Install dependencies
+
+npm install
+
+Start the development server
+
+npm run dev
+
+The application will be available at: http://localhost:5173
+
+Project Structure
+
+The project follows a clean and scalable structure:
+
+src/ ├─ components/ │ ├─ Hero.tsx │ ├─ Navbar.tsx │ ├─ About.tsx │ ├─ WebCard.tsx │ ├─ MobileCard.tsx │ ├─ Contact.tsx │ └─ Footer.tsx ├─ index.css ├─ main.tsx
+
+Each file represents a focused, reusable UI component or page section.
+
+Contact Form Implementation
+
+The contact form is implemented using React Hook Form and fetch, integrated with Formspree:
+
+Client-side validation
+
+Clear success feedback to the user
+
+No layout shift on submit
+
+No custom backend required
+
+This approach reflects how I handle public forms in real projects.
+
+Deployment
+
+The project can be deployed on any modern static hosting platform, such as:
+
+Vercel
+
+Netlify
+
+Cloudflare Pages
+
+To generate a production build:
+
+npm run build
+
+About Me
+
+Elis Pethke Frontend & Mobile Engineer
+
+I focus on building modern, performant, and user-centered interfaces, transforming complex ideas into intuitive digital experiences. I value clean code, collaboration, and continuous learning.
+
+Contributing
+
+This is a personal project, but feedback and suggestions are welcome. Feel free to open an issue to report bugs or propose improvements.
+
+License
+
+This project is licensed under the MIT License. You are free to study and adapt the code for learning purposes.
+
+Why this README works well for recruiters
+
+Keywords like React, TypeScript, Frontend Engineer, Performance, UX, UI, Framer Motion help SEO on GitHub
+
+Clear explanation of what you built and why
+
+Shows technical decisions, not just visuals
+
+Reads like a real production project, not a tutorial
