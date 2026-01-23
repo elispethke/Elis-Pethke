@@ -1,11 +1,12 @@
-import { motion } from "framer-motion";
+import { motion, MotionProps } from "framer-motion";
 import { cn } from "@/lib/utils";
+import {ComponentPropsWithoutRef} from "react";
 
-interface HoverGlowButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: "primary" | "secondary" | "ghost";
-  size?: "sm" | "md" | "lg";
-  children: React.ReactNode;
-}
+type HoverGlowButtonProps = ComponentPropsWithoutRef<typeof motion.button> & {
+    variant?: "primary" | "secondary" | "ghost";
+    size?: "sm" | "md" | "lg";
+    children: React.ReactNode;
+};
 
 export const HoverGlowButton = ({
   className,
@@ -29,6 +30,7 @@ export const HoverGlowButton = ({
 
   return (
     <motion.button
+    {...props}
       type={type}
       className={cn(
         "relative font-medium rounded-xl transition-all duration-300",
