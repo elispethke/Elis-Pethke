@@ -1,4 +1,4 @@
-Project Title
+Elisagela Pethke Site Portfolio
 
 Elis Pethke — Frontend & Mobile Engineer Portfolio
 
