@@ -1,12 +1,13 @@
 import {motion} from "framer-motion";
 import ProjectCard from "./ProjectCard";
+import fotoWeb1 from "@/assets/img/fotoWeb1.png";
+import fotoWeb2 from "@/assets/img/fotoWeb2.png";
 
 const webProjects = [
     {
         title: "Psicoterapia em Movimento",
-        description:
-            "Full page with image carousel, custom cards with modal, form, Portuguese–English translation, and page navigation. ",
-        image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=600&fit=crop",
+        description:"Full page with image carousel, custom cards with modal, form, Portuguese–English translation, and page navigation. ",
+        image: fotoWeb2,
         technologies: ["React", "Typescript", "Tailwind", "Node.js"],
         githubUrl: "https://github.com/elispethke/Arco-psicoterapia-em-Movimento",
         liveUrl: "#",
@@ -15,7 +16,7 @@ const webProjects = [
         title: "Inglês Com Carol Maria",
         description:
             "Plataforma SaaS para gestão de projetos com colaboração em tempo real, kanban boards e integrações.",
-        image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop",
+        image: fotoWeb1,
         technologies: ["Next.js", "Prisma", "PostgreSQL", "Stripe"],
         githubUrl: "#",
         liveUrl: "#",
