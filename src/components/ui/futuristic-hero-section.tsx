@@ -45,7 +45,7 @@ export const AuroraHero = () => {
                     transition={{delay: 0.3}}
                     className="max-w-3xl bg-gradient-to-br from-white to-gray-500 bg-clip-text text-center text-3xl font-medium leading-tight text-transparent sm:text-5xl sm:leading-tight md:text-8xl md:leading-tight"
                 >
-                    Elisangela Pethke
+                    Elis Pethke
                 </motion.h1>
 
                 <motion.p
