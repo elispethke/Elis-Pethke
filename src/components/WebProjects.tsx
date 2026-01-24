@@ -2,58 +2,64 @@ import {motion} from "framer-motion";
 import ProjectCard from "./ProjectCard";
 import fotoWeb1 from "@/assets/img/fotoWeb1.png";
 import fotoWeb2 from "@/assets/img/fotoWeb2.png";
+import fotoWeb3 from "@/assets/img/fotoWeb3.png";
+import fotoWeb4 from "@/assets/img/fotoWeb4.png";
+import fotoWeb5 from "@/assets/img/fotoWeb5.png";
+import fotoWeb6 from "@/assets/img/fotoWeb6.png";
 
 const webProjects = [
     {
-        title: "Psicoterapia em Movimento",
-        description:"Full page with image carousel, custom cards with modal, form, Portuguese–English translation, and page navigation. ",
-        image: fotoWeb2,
-        technologies: ["React", "Typescript", "Tailwind", "Node.js"],
-        githubUrl: "https://github.com/elispethke/Arco-psicoterapia-em-Movimento",
-        liveUrl: "#",
-    },
-    {
-        title: "Inglês Com Carol Maria",
+        title: "Arco Psicoterapia em Movimento",
         description:
-            "Plataforma SaaS para gestão de projetos com colaboração em tempo real, kanban boards e integrações.",
-        image: fotoWeb1,
-        technologies: ["Next.js", "Prisma", "PostgreSQL", "Stripe"],
+            "Professional website for two psychotherapists built with React and Vite, featuring an image carousel hero section, interactive event cards that open detailed modals, animated header effects, and a clean, well-organized codebase using reusable components, props, and custom hooks.",
+        image: fotoWeb2,
+        technologies: ["React", "Vite", "Tailwind CSS"],
         githubUrl: "#",
         liveUrl: "#",
     },
     {
-        title: "SaaS Financial System",
-        description: "Finance management SaaS platform featuring a real-time dashboard, developed with React, Vite, Node.js, and Tailwind CSS, with a strong focus on performance and user experience.",
-        image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop",
-       technologies: ["React", "Storybook", "CSS Variables", "Figma"],
-       githubUrl: "#",
-       liveUrl: "#",
+        title: "English with Carol Maria",
+        description:
+            "Modern English course landing page built with React and Vite, featuring a polished UX/UI design, reusable components, clean architecture, and payment integration for course access, implemented using props and custom hooks.",
+        image: fotoWeb1,
+        technologies: ["React", "Vite", "Tailwind CSS", "Payments API"],
+        githubUrl: "#",
+        liveUrl: "#",
+    },
+    {
+        title: "StreamsPlat",
+        description:
+            "Finance management SaaS platform featuring a real-time dashboard, developed with React, Vite, Node.js, and Tailwind CSS, with a strong focus on performance and user experience.",
+        image: fotoWeb3,
+        technologies: ["React", "Storybook", "CSS Variables", "Figma"],
+        githubUrl: "#",
+        liveUrl: "#",
     },
 
     {
-        title: "Premium Sneaker ",
+        title: "Premium Sneaker",
         description:
-            "Design system completo com componentes reutilizáveis, documentação interativa e tokens de design.",
-        image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop",
-        technologies: ["React", "Storybook", "CSS Variables", "Figma"],
+            "Premium sneaker e-commerce built with React and Vite, featuring a dynamic shopping experience, reusable components, a clean and modern architecture, and a visually rich interface designed with strong UX/UI principles.",
+        image: fotoWeb4,
+        technologies: ["React", "Vite", "Tailwind CSS"],
         githubUrl: "#",
         liveUrl: "#",
     },
     {
-        title: "Piano Course Website ",
+        title: "Car Rental Premium",
         description:
-            "Design system completo com componentes reutilizáveis, documentação interativa e tokens de design.",
-        image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop",
-        technologies: ["React", "Storybook", "CSS Variables", "Figma"],
+            "Premium car rental platform built with React and Tailwind, featuring reusable components, a clean and modern architecture, luxury vehicle listings, and API integration for real-time availability and pricing.",
+        image: fotoWeb5,
+        technologies: ["React", "Tailwind CSS", "API"],
         githubUrl: "#",
         liveUrl: "#",
     },
     {
-        title: "Premium Rental Platform ",
+        title: "FinMen Dashboard",
         description:
-            "Design system completo com componentes reutilizáveis, documentação interativa e tokens de design.",
-        image: "https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=800&h=600&fit=crop",
-        technologies: ["React", "Storybook", "CSS Variables", "Figma"],
+            "Financial dashboard built with React and Vite, focused on clear and actionable data visualization. Features sophisticated interactive charts, well-structured financial metrics, and a scalable component-based architecture.",
+        image: fotoWeb6,
+        technologies: ["React", "Vite", "TypeScript", "Charts", "CSS"],
         githubUrl: "#",
         liveUrl: "#",
     },

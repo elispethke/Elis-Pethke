@@ -4,13 +4,16 @@ import GlowEffect from "./ui/glow-effect";
 import HoverGlowButton from "./ui/hover-glow-button";
 import ProjectCard from "./ProjectCard";
 import MobileProjectCard from "./MobileProjectCard";
+import fotoMo1 from "@/assets/img/fotoMo1.png";
+import fotoMo2 from "@/assets/img/fotoMo2.png";
+import fotoMo3 from "@/assets/img/fotoMo3.png";
 
 const mobileProjects = [
     {
         title: "Chef Delivery",
         description:
             "Delivery app built with SwiftUI, providing a smooth and intuitive user experience while exploring core SwiftUI concepts such as layouts, navigation, state management, animations, and API integration.",
-        image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=400&h=800&fit=crop",
+        image: fotoMo1,
         technologies: ["React Native", "TypeScript", "Firebase"],
         githubUrl: "https://github.com/elispethke/Chef-Delivery",
     },
@@ -19,7 +22,7 @@ const mobileProjects = [
         title: "Tasky App",
         description:
             "Task management app that allows users to create tasks with a title and description, remove existing tasks, mark tasks as completed or pending, and persist data locally using UserDefaults so tasks remain saved even after the app is closed.",
-        image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=800&fit=crop",
+        image: fotoMo2,
         technologies: ["Swift", "SwiftUI", "Core Data"],
         githubUrl: "https://github.com/elispethke/TaskApp",
     },
@@ -28,7 +31,7 @@ const mobileProjects = [
         title: "Vollmed",
         description:
             "Medical appointment scheduling app built with SwiftUI and integrated with a RESTful CRUD API, providing an intuitive and efficient experience for booking medical consultations.",
-        image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=800&fit=crop",
+        image:fotoMo3,
         technologies: ["React Native", "Socket.io", "MongoDB"],
         githubUrl: "https://github.com/elispethke/Vollmed",
     },
