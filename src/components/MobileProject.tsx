@@ -10,7 +10,7 @@ import fotoMo3 from "@/assets/img/fotoMo3.png";
 
 const mobileProjects = [
     {
-        title: "Chef Delivery",
+        title: "Burger Rio",
         description:
             "Delivery app built with SwiftUI, providing a smooth and intuitive user experience while exploring core SwiftUI concepts such as layouts, navigation, state management, animations, and API integration.",
         image: fotoMo1,
@@ -19,26 +19,25 @@ const mobileProjects = [
     },
 
     {
-        title: "Tasky App",
+        title: "Chef Delivery",
         description:
-            "Task management app that allows users to create tasks with a title and description, remove existing tasks, mark tasks as completed or pending, and persist data locally using UserDefaults so tasks remain saved even after the app is closed.",
+            "This delivery app was developed using SwiftUI, providing a smooth and intuitive experience for users. The project explores key SwiftUI concepts, including layouts, navigation, state management, animations, and API integration.",
         image: fotoMo2,
         technologies: ["Swift", "SwiftUI", "Core Data"],
         githubUrl: "https://github.com/elispethke/TaskApp",
     },
 
     {
-        title: "Vollmed",
-        description:
-            "Medical appointment scheduling app built with SwiftUI and integrated with a RESTful CRUD API, providing an intuitive and efficient experience for booking medical consultations.",
-        image:fotoMo3,
+        title: "Minas Brasil",
+        description: "This is an app for managing a Brazilian products market in Berlin: under construction.",
+        image: fotoMo3,
         technologies: ["React Native", "Socket.io", "MongoDB"],
         githubUrl: "https://github.com/elispethke/Vollmed",
     },
     {
-        title: "Delivery",
+        title: "Tasky",
         description:
-            "Delivery app built with SwiftUI, providing a smooth and intuitive user experience while exploring core SwiftUI concepts such as layouts, navigation, state management, animations, and API integration.",
+            "A simple task list app that allows you to add, remove, and mark tasks as completed, using UserDefaults to persist data locally.",
         image: "https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?w=400&h=800&fit=crop",
         technologies: ["React Native", "TypeScript", "Firebase"],
         githubUrl: "https://github.com/elispethke/Chef-Delivery",
@@ -46,17 +45,15 @@ const mobileProjects = [
 
     {
         title: "Finance App",
-        description:
-            "Task management app that allows users to create tasks with a title and description, remove existing tasks, mark tasks as completed or pending, and persist data locally using UserDefaults so tasks remain saved even after the app is closed.",
+        description: "Personal Finance Dashboard for Expense Tracking",
         image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=400&h=800&fit=crop",
         technologies: ["Swift", "SwiftUI", "Core Data"],
         githubUrl: "https://github.com/elispethke/TaskApp",
     },
 
     {
-        title: "Pomodoro App",
-        description:
-            "Medical appointment scheduling app built with SwiftUI and integrated with a RESTful CRUD API, providing an intuitive and efficient experience for booking medical consultations.",
+        title: "Netflix Clone",
+        description: " Under construction.",
         image: "https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=400&h=800&fit=crop",
         technologies: ["React Native", "Socket.io", "MongoDB"],
         githubUrl: "https://github.com/elispethke/Vollmed",

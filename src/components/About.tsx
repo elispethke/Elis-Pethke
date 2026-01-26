@@ -107,10 +107,15 @@ export const About = () => {
                         </div>
 
                         {/* CTA */}
-                        <HoverGlowButton variant="primary" size="lg">
-                            <Download className="w-5 h-5" />
-                            <span>Download Currículo</span>
-                        </HoverGlowButton>
+                        <a href="/resume.pdf" 
+                        download 
+                        target="_blank" 
+                        rel="noopener noreferrer">
+                            <HoverGlowButton variant="primary" size="lg">
+                                <Download className="w-5 h-5" />
+                                <span>Download Resume</span>
+                            </HoverGlowButton>
+                        </a>
                     </motion.div>
                 </div>
             </div>
