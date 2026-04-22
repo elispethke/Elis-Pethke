@@ -3,7 +3,7 @@ import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import MobileProject from "@/components/MobileProject";
 import Navbar from "@/components/Navbar";
-import AuroraHero from "@/components/ui/futuristic-hero-section";
+import AuroraHero from "@/components/Hero";
 import WebProjects from "@/components/WebProjects";
 
 const Index = () => {

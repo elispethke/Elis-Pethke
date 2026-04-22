@@ -2,7 +2,6 @@ import {motion} from "framer-motion";
 import {Github, ExternalLink} from "lucide-react";
 import GlowEffect from "./ui/glow-effect";
 import HoverGlowButton from "./ui/hover-glow-button";
-import {title} from "process";
 
 interface ProjectCardProps {
     title: string;
@@ -47,7 +46,7 @@ export const ProjectCard = ({title, description, image, technologies, githubUrl,
                             {technologies.map((tech) => (
                                 <span
                                     key={tech}
-                                    className="px-3 py-1 text-xs font-medium rounded-full bg-secondary/50 text-muted-foreground border border-border/50"
+                                    className="px-3 py-1 text-xs font-medium rounded-full bg-secondary/20 text-foreground border border-border/50"
                                 >
                                     {tech}
                                 </span>

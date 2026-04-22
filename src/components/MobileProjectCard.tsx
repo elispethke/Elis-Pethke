@@ -66,7 +66,7 @@ export const MobileProjectCard = ({
                     {technologies.map((tech) => (
                         <span
                             key={tech}
-                            className="px-3 py-1 text-xs font-medium rounded-full bg-secondary/50 text-muted-foreground border border-border/50"
+                            className="px-3 py-1 text-xs font-medium rounded-full bg-secondary/20 text-foreground border border-border/50"
                         >
                             {tech}
                         </span>
@@ -75,7 +75,7 @@ export const MobileProjectCard = ({
 
                 {/* GitHub button */}
                 {githubUrl && (
-                    <HoverGlowButton variant="secondary" size="sm">
+                    <HoverGlowButton variant="primary" size="sm">
                         <Github className="w-4 h-4" />
                         <span>Ver Código</span>
                     </HoverGlowButton>

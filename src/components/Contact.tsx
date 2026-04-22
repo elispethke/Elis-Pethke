@@ -39,7 +39,7 @@ export const Contact = () => {
             },
             body: JSON.stringify(data),
         });
-        if (Response) {
+        if (responde.ok) {
             reset();
             setSuccessMessage(true);
         }
@@ -157,7 +157,7 @@ export const Contact = () => {
                                 </div>
 
                                 <div>
-                                    <label className="block text-sm font-medium mb-2">Menssage</label>
+                                    <label className="block text-sm font-medium mb-2">Message</label>
                                     <Textarea
                                         rows={5}
                                         placeholder="Conte-me sobre seu projeto..."
